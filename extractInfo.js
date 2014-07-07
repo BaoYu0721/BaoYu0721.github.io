@@ -30,5 +30,6 @@ function extractInfo()/*从作业页面中抽取信息*/
 	$("div.topbar").append(a);
 	$("#addToCalendar").click(function(e){
 		extractInfo();
+		alert("记录成功");
 	});
 })();
