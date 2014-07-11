@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.tabTitle
+{
+	background:#f4f4f4;
+	height:29px;
+	border:none;
+	border-top:3px solid #e5e5e5;
+	position:relative;
+	margin:0;
+	margin-bottom:15px;
+	border-color:#09f;
+	width:1000px;
+}
+
+div.tabs
+{
+	position:absolute;
+	overflow:hidden;
+}
+
+li.titleStyle
+{
+	cursor:default;
+	font-weight:bold;
+	background:#fff;
+	border-bottom:none;
+	float:left;
+	overflow:hidden;
+	border-top:none;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+}
+
+div.pager
+{
+	margin:15px 0;
+	clear:both;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:block;
+	width:1000px;
+}
+
+div.range
+{
+	float:left;
+	font-size:12px;
+	color:#909090;
+	margin-right:10px;
+	line-height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	display:inline;
+}
+
+ul.turn
+{
+	width:105px;
+	float:right;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	list-style:none;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+li.ulPre
+{
+	float:left;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:inline;
+	font-size:12px;
+	border:2px solid #3aF;
+	cursor:pointer;
+	color:#3aF;
+	background-color:#fff;
+	border-radius:3px;
+	font-weight:bold;
+	padding:2px;
+}
+
+li.ulPreHover
+{
+	float:left;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:inline;
+	font-size:12px;
+	border:2px solid #3af;
+	cursor:pointer;
+	color:#fff;
+	background-color:#3aF;
+	border-radius:3px;
+	font-weight:bold;
+	padding:2px;
+}
+
+li.ulPreUnable
+{
+	float:left;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:inline;
+	font-size:12px;
+	border:2px solid #ddd;
+	cursor:text;
+	color:#ddd;
+	background-color:#fff;
+	border-radius:3px;
+	font-weight:bold;
+	padding:2px;
+}
+
+li.ulNext
+{
+	float:left;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	margin-left:10px;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:inline;
+	font-size:12px;
+	border:2px solid #3aF;
+	cursor:pointer;
+	color:#3aF;
+	background-color:#fff;
+	border-radius:3px;
+	font-weight:bold;
+	padding:2px;
+}
+
+li.ulNextHover
+{
+	float:left;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	margin-left:10px;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:inline;
+	font-size:12px;
+	border:2px solid #3af;
+	cursor:pointer;
+	color:#fff;
+	background-color:#3aF;
+	border-radius:3px;
+	font-weight:bold;
+	padding:2px;
+}
+
+li.ulNextUnable
+{
+	float:left;
+	height:22px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	margin-left:10px;
+	word-break:break-all;
+	word-wrap:break-word;
+	display:inline;
+	font-size:12px;
+	border:2px solid #ddd;
+	cursor:text;
+	color:#ddd;
+	background-color:#fff;
+	border-radius:3px;
+	font-weight:bold;
+	padding:2px;
+}
+
+div.commentBox
+{
+	border:none;
+	background:#fff;
+	height:100%;
+	margin-bottom:15px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	display:block;
+	padding:0;
+	border:0;
+	width:1000px;
+}
+
+div.comment
+{
+	padding-bottom:10px;
+	margin-bottom:12px;
+	border-bottom:1px solid #e5e5e5;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	display:block;
+}
+
+div.storey
+{
+	position:relative;
+	padding-bottom:2px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	display:block;
+}
+
+div.userPhoto
+{
+	float:left;
+	margin-right:10px;
+	width:50px;
+	display:block;
+}
+
+div.userName
+{
+	color:#909090;
+	height:18px;
+	position:relative;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+}
+
+div.content
+{
+	padding-top:5px;
+	overflow:hidden;
+	zoom:1;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+}
+
+div.commentContent
+{
+	margin-bottom:10px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+}
+
+div.otherInfo
+{
+	float:right;
+	width:280px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	color:#909090;
+}
+
+select.pages
+{
+	float:right;
+	border:2px solid #3af;
+	width:60px;
+	font-size:16px;
+	text-align:center;
+}
+
+div.nextImgArea
+{
+	height:600px; 
+	width:300px; 
+	position:absolute; 
+	right:0px; 
+	cursor:pointer
+}
+
+div.preImgArea
+{
+	height:600px; 
+	width:300px; 
+	position:absolute; 
+	left:0px; 
+	cursor:pointer
+}
+
+div.imgInfoArea
+{
+	font-size:24px;
+	font-family:"Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+	color:#03F;
+	font-weight:bold;
+	display:none;
+}
+
+span.pictureChange
+{
+	height:10px;
+	width:10px;
+	background-color:#06F;
+	margin-left:10px;
+	margin-right:10px;
+	display:inline;
+	color:#06F;
+	cursor:pointer;
+}
+
+span.pictureChangeSelected
+{
+	height:10px;
+	width:10px;
+	background-color:#aaa;
+	margin-left:10px;
+	margin-right:10px;
+	display:inline;
+	color:#aaa;
+	cursor:pointer;
+}

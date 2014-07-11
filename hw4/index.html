@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>轮播图片</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="page.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="img/background.jpg">
+	<div align="center" style="position:relative; display:block">
+    	<div id="nextImg" title="下一页" class="nextImgArea" onclick="clickToNext(window.i)">
+        	<img src="img/rightArrow.png" style="position:absolute; top:50%; right:30px"/>
+        </div>
+        <div id="preImg" title="上一页" class="preImgArea" onclick="clickToPre(window.i)">
+        	<img src="img/leftArrow.png" style="position:absolute; top:50%; left:30px"/>
+        </div>
+        <div id = "imgArea">
+        	<div id="imgInfo" class="imgInfoArea">
+            	骑师和他的队友
+            </div>
+            <div id="ShowImg">
+    			<img id="showImg" src="img/img1.jpg" title="骑师和他的队友" />
+            </div>
+        </div>
+        <div>
+        	<span class="pictureChange" id="pictureID0" onclick="clickToImgN(0)">■</span>
+            <span id="pictureID1" class="pictureChange" onclick="clickToImgN(1)">■</span>
+            <span class="pictureChange" onclick="clickToImgN(2)" id="pictureID2">■</span>
+            <span class="pictureChange" onclick="clickToImgN(3)" id="pictureID3">■</span>
+            <span class="pictureChange" onclick="clickToImgN(4)" id="pictureID4">■</span>
+            <span class="pictureChange" onclick="clickToImgN(5)" id="pictureID5">■</span>
+        </div>
+    </div>
+    
+    <div style="height:10px"></div>
+    
+    <div>
+    
+    <div align="center">
+    <div class="tabTitle">
+    	<div class="tabs">
+        	<ul>
+            	<li class="titleStyle">
+                	全部评论
+                    <em id="commentNum">(35)</em>
+                </li>
+            </ul>
+    	</div>
+    </div>
+    </div>
+    
+    <div align="center">
+    <div class="pager" id="pageBar" style="background-color:#fff;">
+    	<div class="range">
+        	第
+            <span id="rangeStart">1</span>
+            到
+            <span id="rangeEnd">10</span>
+            条
+        </div>
+        <ul class="turn">
+        	<li title="上一页" class="ulPre" id="bnPre">
+            	<a onclick="PreCommentPage()">上一页</a>
+            </li>
+            <li title="下一页" class="ulNext" id="bnNext">
+            	<a onclick="NextCommentPage()">下一页</a>
+            </li>
+        </ul>
+        <select id="goToPage" class="pages" onchange="GoToPage()">
+        	<option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+    </div>
+    
+    <div align="center">
+    <div class="commentBox" id="CommentBox">
+    	<div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+            		<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户1
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>这是一个赛马的故事</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户3
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>负伤后有归赛的赛马</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户2
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>好吧，貌似没啥说的</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户6
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>只能随便加点评论</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户12
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>只是随便说说</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户3
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>凑凑字数</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户2
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>然后再凑凑评论数</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户1
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>凑评论数好麻烦啊</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户17
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>都不知道要说啥比较好啊</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment">
+        	<div class="storey">
+            	<div class="userPhoto">
+                	<img src="img/logo.jpg">
+                </div>
+                <div class="userName" align="left">
+                	用户14
+                </div>
+                <div class="content">
+                	<div class="commentContent" align="left">
+                    	<p>你看看这字数凑的</p>
+                    </div>
+                    <div class="otherInfo" align="right">
+                    	一天前
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+</body>
+</html>
